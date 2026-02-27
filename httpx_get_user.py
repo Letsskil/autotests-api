@@ -9,7 +9,6 @@ create_user_payload = {
     "firstName": "Igor",
     "middleName": "string"
 }
-# test
 create_user_response = httpx.post("http://localhost:8000/api/v1/users", json=create_user_payload)
 create_user_response_data = create_user_response.json()
 print('Create user data:', create_user_response_data)
